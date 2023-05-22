@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+{% include 'main-nav.html' %}
+
+{% include 'masthead.html' %}
+
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container mb-3">
+                <div class="text-center">
+                    <!--<h2 class="section-heading text-uppercase"></h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img class="border border-5 border-grey" src="{% static './assets/img/menswear-front.jpg' %}">
+                        <h4 class="my-3 text-uppercase">Menswear</h4>
+                        <p class="text-muted">If you are looking for something unique that you won’t find anywhere else, then Review should be your first port of call. For over 10 years we have been making Teesside a smarter place, with cutting edge men’s clothing from leading designers. We stock only the latest styles from around Europe.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="border border-5 border-grey" src="{% static './assets/img/suits-front.png' %}">
+                        <h4 class="my-3 text-uppercase">Suit Hire</h4>
+                        <p class="text-muted">Specialists in formal suit hire for all occasions. We cater for all age ranges and our suits range from classic fit to super slim. There is a vast selection of waistcoats, cravats and ties to choose from, making sure you match up with the bride and bridesmaids’ dresses.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="border border-5 border-grey" src="{% static './assets/img/sample-suits.jpg' %}">
+                        <h4 class="my-3 text-uppercase">Gallery</h4>
+                        <p class="text-muted">We understand how important it is that you look the part, so don’t just take our word for it, visit our gallery and you’ll get some inspiration and see what the store looks like. We update this often with our new menswear, store offers and samples of our new suit hire ranges.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    {% for user in users %}
+                    <div class="col-4">
+                        {{ user.id }}
+                    </div>
+                    <div class="col-4">
+                        {{ user.name }}
+                    </div>
+                     <div class="col-4">
+                        {{ user.username }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+
+{% endblock %}
