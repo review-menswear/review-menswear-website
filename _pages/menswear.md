@@ -1,5 +1,5 @@
 ---
-permalink: "/Menswear/"
+permalink: "/menswear/"
 layout: default
 title:  "Menswear"
 ---

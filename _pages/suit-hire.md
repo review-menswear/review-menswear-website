@@ -1,6 +1,6 @@
 ---
 permalink: "/suit-hire/"
-layout: default
+layout: page
 title:  "Suit Hire"
 ---
 
