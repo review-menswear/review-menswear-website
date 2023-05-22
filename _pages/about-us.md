@@ -1,6 +1,6 @@
 ---
 permalink: "/about-us/"
-layout: default
+layout: page
 title:  "About Us"
 ---
 

@@ -1,6 +1,6 @@
 ---
 permalink: "/menswear/"
-layout: default
+layout: page
 title:  "Menswear"
 ---
 
